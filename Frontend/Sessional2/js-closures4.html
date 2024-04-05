@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Closures for JS</title>
+    </head>
+    <body>
+        <h1>Closures</h1>
+        <script>
+            const add = (function(){
+                let counter = 0;
+                return function(){counter +=1; return counter}
+            })();
+            console.log("Counter at 1:", add());
+            console.log("Counter at 2:", add());
+            console.log("Counter at 3:", add());
+        </script>
+    </body>
+</html>

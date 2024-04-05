@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Demo for JS</title>
+    </head>
+    <body>
+        <h1>Demo</h1>
+        <script>
+            let constA = 30;
+            function outer()
+            {
+                let constB = 20;
+                function inner()
+                {
+                    let constC = 10;
+                    console.log(constA);
+                    console.log(constB);
+                    console.log(constC);
+                }
+                inner();
+            }
+            outer();
+        </script>
+    </body>
+</html>
